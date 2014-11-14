@@ -21,7 +21,7 @@ before(function(){
 	// The webserver configuration for testing is set to run on port 8001.
 	// This configuration also points to the minified version of the app.
 	// See the 'connect' task in the 'Gruntfile.js' for more details.
-	driver.get('http://localhost:'+browser.params.port);
+	driver.get('http://localhost:'+browser.params.port+'/frontend');
 	
 	// Note also that there is no need to explicitly invoke 'done' as protractor
 	// tests are completely asynchronous. For more details about control flow:
